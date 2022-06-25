@@ -14,11 +14,10 @@ So far this is a bit sketchy but I'm imagining something like this:
 
 ```mermaid
 graph TD
-    A[Bark] --> B(Record)
-    B --> C{Is neighbours dog?}
+    A[Bark] --> B2(Record) --> B3(ML)
+    B3 --> C{Is neighbours dog?}
     C -->|Yes| D[Post to Twitter]
     C -->|No| E[nothing]
-
 ```
 
 Recording is probably a Pi which stores the recording in blob store in Azure where a function then kicks off the ML detection with yet another function doing something with the results. Posting to Twitter is an option, but a webpage is probably more useful for this.
