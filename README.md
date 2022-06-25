@@ -14,8 +14,8 @@ So far this is a bit sketchy but I'm imagining something like this:
 
 ```mermaid
 graph TD
-    A[Bark] --> B2(Record) --> B3(ML)
-    B3 --> C{Is neighbours dog?}
+    A[Bark] --> B2(Record) --> B3(Upload to blob) --> B4(ML)
+    B4 --> C{Is neighbours dog?}
     C -->|Yes| D[Post to Twitter]
     C -->|No| E[nothing]
 ```
