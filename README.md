@@ -40,7 +40,7 @@ Let's see where this will go.
 
 ## Experimenting with the parts
 
-1. [Recording sound using a Raspberry Pi]{https://github.com/peterbb148/vovvov/blob/main/Record.md}
+1. [Recording sound using a Raspberry Pi]{/Record.md}
 2. Uploading the recorded sound to Azure Blog Storage
 3. Detecting a dog barking in a sound recording using Azure Cognigtion
 
