@@ -12,9 +12,10 @@ Anyway - I've given up trying to ask them to silence the dog, so I thought I'd b
 
 So far this is a bit sketchy but I'm imagining something like this:
 
+'''mermaid
 graph TD
     A[Bark] -->|Get money| B(Record)
     B --> C{Is neighbour dog?}
     C -->|Yes| D[Post to Twitter]
     C -->|No| E[nothing]
-
+'''
